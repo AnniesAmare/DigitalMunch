@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DigitalMunch.iml" filepath="$PROJECT_DIR$/DigitalMunch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/source/source.iml" filepath="$PROJECT_DIR$/source/source.iml" />
     </modules>
   </component>
 </project>
