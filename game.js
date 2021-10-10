@@ -31,7 +31,8 @@ that's just messy in the long run...)
 import {Character} from "./character";
 import {Door, Curses, Monster} from "./door";
 import {Treasure, Equipment, Item} from "./treasure";
-import {Player, Turn} from "./player";
+import {Player} from "./player";
+import {Turn} from "./turn";
 
 
 
@@ -53,7 +54,6 @@ var playerID;
 var winner = false;
 var podium;
 var gameOver;
-var inCombat = false;
 
 
 
@@ -67,7 +67,6 @@ function assignPlayerID() {
 
 function generateTurn(){
     //sort playerID's somehow to make a standard for the alternating turns
-    //iterate subclass Turn according to the standards player-order (maybe this should be in a separate function
 }
 
 
@@ -81,16 +80,6 @@ function gameState(winner){
     //end game if gameOver true
     //show order of winners (podium)
     //
-}
-
-function combat(inCombat){
-    //allow player to choose actions
-    //allow other players to interfere (use cards)
-}
-
-function action(){
-    //method should be a if-statement that implements different actions (like kickDoor), based on
-    //a players choices (input) --> use the subclass Turn
 }
 
 

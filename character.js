@@ -7,8 +7,6 @@ class Character {
         this.level = 0;
     }
 
-    //we need some getter methods down here for class, level and so on
-
 }
 
 export{Character};
