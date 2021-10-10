@@ -31,8 +31,6 @@ that's just messy in the long run...)
 import {Character} from "./character";
 import {Door, Curses, Monster} from "./door";
 import {Treasure, Equipment, Item} from "./treasure";
-import {Player} from "./player";
-import {Turn} from "./turn";
 
 
 
@@ -50,39 +48,6 @@ The class dungeon now represents only the door-cards.
 //a counter for how many rounds have been played to manage special rules.
 // Like first round "7 cards on hand" rule
 var round = 0;
-var playerID;
-var winner = false;
-var podium;
-var gameOver;
-
-
-
-//Functions------------------------------------------------------------------------------//
-function assignPlayerID() {
-    //find someway to generate a playerID
-
-    return playerID;
-}
-
-
-function generateTurn(){
-    //sort playerID's somehow to make a standard for the alternating turns
-}
-
-
-function saveCards(){
-    //add any cards draw to hand
-}
-
-function gameState(winner){
-    //check for a winner, and if found begin saving order in which players reach lvl 10
-    //check if game is over or still continuing (if gameOver true)
-    //end game if gameOver true
-    //show order of winners (podium)
-    //
-}
-
-
 
 
 
