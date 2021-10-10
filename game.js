@@ -1,3 +1,4 @@
+
 //Import functions-----------------------------------------------------------------------------------//
 
 /*This methods adds the js files to the HTML body
@@ -9,7 +10,7 @@ function load(script) {
 
 //This will be executed upon completely parsing the script tag in index.php, html body
 load("character.js");
-load("door.js");
+load("dungeon.js");
 load("treasure.js");
 
 
@@ -29,19 +30,7 @@ a real mindfucker. We need to ask our supervisor for this. That or do all our co
 that's just messy in the long run...)
  */
 import {Character} from "./character";
-import {Door, Curses, Monster} from "./door";
 import {Treasure, Equipment, Item} from "./treasure";
-
-
-
-
-//IMPORTANT class explanation----------------------------------------------------------------------//
-/*NOTE: With the separation of js files the game.js file will act as main.
-Meaning that in there the game-state (session) / lobby / win and lose definitions will be handled.
-The class dungeon now represents only the door-cards.
-
-(I would shove this in our class-diagram, but I unfortunately don't have access currently)
- */
 
 
 

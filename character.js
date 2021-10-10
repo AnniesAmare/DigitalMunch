@@ -12,8 +12,8 @@ class Character {
     };
 
     fight(monster){
-        //method that compares a monster class level with character-level
-        // and adds all possible bonuses available in combat to the calculation
+        //method that compaes a monster class level with character-level
+        // and adds all possible bonusses available in combat to the calculation
     };
 
     runFrom(monster){
