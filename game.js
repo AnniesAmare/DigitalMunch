@@ -43,12 +43,6 @@ The class dungeon now represents only the door-cards.
 (I would shove this in our class-diagram, but I unfortunately don't have access currently)
  */
 
-//Variables----------------------------------------------------------------------------------------//
-
-//a counter for how many rounds have been played to manage special rules.
-// Like first round "7 cards on hand" rule
-var round = 0;
-
 
 
 //Tests---------------------------------------------------------------------------------------//
