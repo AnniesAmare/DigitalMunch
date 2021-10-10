@@ -1,5 +1,5 @@
 class Door {
-    constructor(type, description) {
+    constructor(cardId, type, description) {
         this.type = type;
         this.description = description;
     }
@@ -7,17 +7,17 @@ class Door {
 }
 
 class Curses extends Door{
-    constructor(type, description, usages) {
+    constructor(cardId, type, description, usages) {
         super(type, description);
         this.usages = usages;
     }
 
-    addCurse(usages){
+    addCurse(cardId, playerId, usages){
         //a method that adds a curse-state to a item/character/card that's decided by the player
         //has to check if card has a limited use that has been used
     }
 
-    removeCurse(usages){
+    removeCurse(cardId, playerId, usages){
         //a method that removes a curse-state
         //has to check if card has a limited use that has been used
     }
@@ -26,13 +26,13 @@ class Curses extends Door{
 }
 
 class Monster extends Door{
-    constructor(type, description, level, treasureNumber) {
+    constructor(monsterId, type, description, level, treasureNumber) {
         super(type, description);
         this.level = level;
         this.treasureNumber = treasureNumber;
     }
 
-    getLevel(){
+    getLevel(playerId){
         return this.level
     }
 
