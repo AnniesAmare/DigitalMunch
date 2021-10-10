@@ -20,6 +20,7 @@ class Turn{
     kickDoor(){
         //use drawCard method here
         //implement combat if card is monster
+        //if not monster save card, and implement action method
     }
 
     lootTheRoom(){
@@ -32,6 +33,7 @@ class Turn{
         //check the cardSum on the players hand (one may only have 5) - if move is valid
         //check which type of card (door or treasure) should be drawn
         //draw random card(s) (check how many cards the player wants to draw with cardNumber variable)
+        //save card
     }
 
     useCard(cardID, playerID){
@@ -56,3 +58,5 @@ class Turn{
 
 
 }
+
+export {Turn};
