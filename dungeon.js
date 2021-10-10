@@ -1,1 +1,0 @@
-document.write('<h2 > checking if a html output can be loaded from within the other java-files</h2>');
