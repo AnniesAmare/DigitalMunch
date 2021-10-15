@@ -128,15 +128,27 @@ var characters = [
 
 console.log("Characters are: ID =",test.name," and description = ",test2.name);
 
-//Monster tests
-var test3 = new Monster("type angry", "will try to kill you", 14, 3);
-
-console.log(test3.description)
-
 //Treasure tests
-var test4 = new Treasure(100, 1, "will up your lvl, because it just will")
+var test3 = new Item(300, 1, "For a small sacrifice you gain strength from this magic lamp!",
+    "If you sacrifice a 100 gold you add a lvlBonus to your short sword (If you have one)")
+console.log()
 
-console.log("This is a treasure card: worth ", test4.value, " gold and levelBonus is ", test4.levelBonus)
+var test4 = new Equipment(200, 4, "This is a short sword made by Merlin himself. " +
+    "You may only wield it if you are a Super Munchkin",
+    "Short Sword", "small - meaning that it isn't a big item")
+
+console.log("The description of this item is: ", test3.description, "\nThe effect of this item is: ", test3.effect)
+console.log("The description of this piece of equipment is: ", test4.description, "\nThe item is worth:  ",
+    test4.value, " gold.\n ...andddd the equipment type is: ", test4.type)
+
+
+//console.log("This is a treasure card: worth ", test4.value, " gold and levelBonus is ", test4.levelBonus)
+
+//Monster tests
+//var test3 = new Monster("type angry", "will try to kill you", 14, 3);
+
+//console.log(test3.description)
+
 
 
 //Curse test
