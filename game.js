@@ -1,6 +1,6 @@
 console.log("Hello World, I am javascript");
 
-//classes------------------------------------------------------------------------------------------//
+//Classes------------------------------------------------------------------------------------------//
 
 class Character {
     constructor(name, gender, race,characterClass) {
@@ -16,8 +16,8 @@ class Character {
     };
 
     fight(monster){
-        //method that compares a monster class level with character-level
-        // and adds all possible bonuses available in combat to the calculation
+        //method that compaes a monster class level with character-level
+        // and adds all possible bonusses available in combat to the calculation
     };
 
     runFrom(monster){
@@ -26,6 +26,7 @@ class Character {
     };
 
 }
+
 class Treasure {
     constructor(value,levelBonus,description) {
         this.value = value;
@@ -42,6 +43,7 @@ class Treasure {
     }
 
 }
+
 class Equipment extends Treasure {
     constructor(value,levelBonus,description,type,size) {
         super(value,levelBonus,description);
@@ -49,6 +51,7 @@ class Equipment extends Treasure {
         this.size = size;
     }
 }
+
 class Item extends Treasure {
     constructor(value,levelBonus,description,effect,useableOnce) {
         super(value,levelBonus,description);
@@ -60,21 +63,21 @@ class Item extends Treasure {
 }
 
 
-class Dungeon{
+class Door{
     constructor(type, description) {
         this.type = type;
         this.description = description;
     }
 
-    enter(){
-        //a method for initializing combat i suppose?
+    use(){
+        //applies curse effects to character or monster
     }
 
 
 }
 
 
-class Monster extends Dungeon{
+class Monster extends Door{
     constructor(type, description, level, treasureNumber) {
         super(type, description);
         this.level = level;
@@ -92,7 +95,7 @@ class Monster extends Dungeon{
 
 }
 
-class Curse extends Dungeon {
+class Curse extends Door {
     constructor(type, description, effect, levelBonus) {
         super(type, description);
         this.effect = effect;
