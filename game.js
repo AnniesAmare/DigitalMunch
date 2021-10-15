@@ -1,37 +1,5 @@
 console.log("Hello World, I am javascript");
 
-
-//placeholder for functions needed to create a player
-function getHand(){
-    //should return a list of what cards is on hand
-    var hand1 = [1,2,3,4,5,5]
-    this.hand = hand1
-    return this.hand
-}
-
-function getBackpack(){
-    //should return a list of what cards is in the backpack
-    var backpack1 = [1,3,8,4,8,5]
-    this.backpack =  backpack1;
-    return this.backpack
-}
-
-function getCharacters(){
-    //a method for getting the a list of the characters a player currently have in play
-    var characters = [2.67,4,7,34,8]
-    this.characterList = characters
-    return this.characterList;
-}
-
-function getCardsInUsage(){
-    //method for getting what cards are currently in play
-    var inUsageList = [89,4,2,6,89]
-    this.cardsInUsage = inUsageList
-    return this.cardsInUsage
-}
-
-
-
 //classes------------------------------------------------------------------------------------------//
 
 class Character {
@@ -41,10 +9,6 @@ class Character {
         this.race = race;
         this.characterClass = characterClass;
         this.level = 0;
-    }
-
-    getCharacterID(){
-        return this.characterID;
     }
 
     levelUp(){
