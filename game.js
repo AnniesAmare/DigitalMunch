@@ -126,7 +126,7 @@ var characters = [
     {test},{test2},
 ]
 
-console.log("Characters are: ID =",test.name," and description = ",test2.name);
+console.log("Characters are: ID =",test.name," and ID = ",test2.name);
 
 //Treasure tests
 var test3 = new Item(300, 1, "For a small sacrifice you gain strength from this magic lamp!",
@@ -141,17 +141,14 @@ console.log("The description of this item is: ", test3.description, "\nThe effec
 console.log("The description of this piece of equipment is: ", test4.description, "\nThe item is worth:  ",
     test4.value, " gold.\n ...andddd the equipment type is: ", test4.type)
 
+//Door tests
+var test5 = new Monster("Demon", "This is Lucifer. Boo-hoo you're screwed", 21, 4)
+var test6 = new Curse("Permanent till removed", "If someone played this then they want to make your" +
+    "life miserable game-wise", "The dreaded situation of AT interfering during your round. Monster lvl +14")
+var DoorCards = [{test5},{test6}]
 
-//console.log("This is a treasure card: worth ", test4.value, " gold and levelBonus is ", test4.levelBonus)
+console.log("Monster type: ", test5.type, "\nDescription: ", test5.description, "lvl: ", test5.level)
+console.log("Curse type: ", test6.type, "\nEffect: ", test6.effect)
+console.log("Datatype: ", typeof DoorCards, ".\nObject type: ", DoorCards)
 
-//Monster tests
-//var test3 = new Monster("type angry", "will try to kill you", 14, 3);
-
-//console.log(test3.description)
-
-
-
-//Curse test
-var test6 = new Curse("whatever", "will debuff you", -2, null)
-console.log("its effect are = ", test6.effect, "levels")
 
