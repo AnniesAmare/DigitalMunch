@@ -70,7 +70,8 @@ class Door{
     }
 
     use(){
-        //applies curse effects to character or monster
+        //initiates door-card
+        // In case of a monster card, this method should return a value that signifies that combat is entered
     }
 
 
@@ -96,17 +97,21 @@ class Monster extends Door{
 }
 
 class Curse extends Door {
-    constructor(type, description, effect, levelBonus) {
+    constructor(type, description, effect) {
         super(type, description);
         this.effect = effect;
-        this.levelBonus = levelBonus;
     }
 
 
-    addEffect(effect){
-        //add effect
-        return effect;
+    addCurse(){
+        //Applies curse effect to character, monster, treasure or item
     }
+
+    removeCurse(){
+        //removes curse effect from character, monster, treasure or item
+    }
+
+
 
 }
 
