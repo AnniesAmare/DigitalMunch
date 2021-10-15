@@ -59,27 +59,6 @@ function getCardsInUsage(){
 
 
 //classes------------------------------------------------------------------------------------------//
-class Player {
-    constructor() {
-        this.playerID = addPlayerID();
-        this.hand = getHand(); //possibly a linked list
-        this.backpack = getBackpack(); //possibly a linked list
-        this.characterList = getCharacters(); //possibly a linked list
-        this.cardsInUsage = getCardsInUsage(); //possibly a linked list
-    }
-
-    calculateTotalCardEffects(){
-        //calculates effectValues, and level bonuses gotten from hand, or in play
-        return null
-    }
-
-
-    getPlayerID(){
-        //a method for getting a players ID
-        return this.playerID
-    }
-
-}
 
 class Character {
     constructor(characterID, name, gender, race,characterClass) {
@@ -218,9 +197,6 @@ var test4 = new Treasure(100, 1, "will up your lvl, because it just will")
 
 console.log("This is a treasure card: worth ", test4.value, " gold and levelBonus is ", test4.levelBonus)
 
-//Player tests
-var test5 = new Player()
-console.log("Here we have a new player: ID =", test5.playerID, ", hand = ", test5.hand)
 
 //Curse test
 var test6 = new Curse("whatever", "will debuff you", -2, null, test5.playerID)
