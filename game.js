@@ -15,6 +15,10 @@ class Character {
         this.level+=1
     };
 
+    isCursed(){
+        //Check for cursed states, and update accordingly
+    }
+
     fight(monster){
         //method that compaes a monster class level with character-level
         // and adds all possible bonusses available in combat to the calculation
@@ -53,10 +57,10 @@ class Equipment extends Treasure {
 }
 
 class Item extends Treasure {
-    constructor(value,levelBonus,description,effect,useableOnce) {
+    constructor(value,levelBonus,description,effect,usableOnce) {
         super(value,levelBonus,description);
         this.effect = effect;
-        this.useableOnce = useableOnce;
+        this.useableOnce = usableOnce;
 
     }
 
