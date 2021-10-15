@@ -20,8 +20,8 @@ class Character {
     }
 
     fight(monster){
-        //method that compaes a monster class level with character-level
-        // and adds all possible bonusses available in combat to the calculation
+        //method that compares a monster class level with character-level
+        // and adds all possible bonuses available in combat to the calculation
     };
 
     runFrom(monster){
@@ -134,7 +134,7 @@ console.log("Characters are: ID =",test.name," and ID = ",test2.name);
 
 //Treasure tests
 var test3 = new Item(300, 1, "For a small sacrifice you gain strength from this magic lamp!",
-    "If you sacrifice a 100 gold you add a lvlBonus to your short sword (If you have one)")
+    "If you sacrifice a 100 gold you add a lvlBonus to your short sword (If you have one)", false)
 console.log()
 
 var test4 = new Equipment(200, 4, "This is a short sword made by Merlin himself. " +
