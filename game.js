@@ -1,32 +1,6 @@
 console.log("Hello World, I am javascript");
 
 
-//functions for adding unique ID's. Currently a test-placeholder (should also have a createID method somewhere)
-function addCharacterID(){
-    var placeholderTestID = 0;
-    return placeholderTestID;
-}
-
-function addMonsterID(){
-    var placeholderTestID = 1;
-    return placeholderTestID;
-}
-
-function addTreasureID(){
-    var placeholderTestID = 2;
-    return placeholderTestID;
-}
-
-function addPlayerID(){
-    var placeholderTestID = 3;
-    return placeholderTestID;
-}
-function addCurseID(){
-    var placeholderTestID = 4;
-    return placeholderTestID;
-}
-
-
 //placeholder for functions needed to create a player
 function getHand(){
     //should return a list of what cards is on hand
@@ -61,8 +35,7 @@ function getCardsInUsage(){
 //classes------------------------------------------------------------------------------------------//
 
 class Character {
-    constructor(characterID, name, gender, race,characterClass) {
-        this.characterID = addCharacterID();
+    constructor(name, gender, race,characterClass) {
         this.name = name;
         this.gender = gender;
         this.race = race;
@@ -140,7 +113,6 @@ class Dungeon{
 class Monster extends Dungeon{
     constructor(type, description, level, treasureNumber) {
         super(type, description);
-        this.monsterID = addMonsterID();
         this.level = level;
         this.treasureNumber = treasureNumber;
     }
@@ -157,17 +129,14 @@ class Monster extends Dungeon{
 }
 
 class Curse extends Dungeon {
-    constructor(type, description, effect, levelBonus, playerID) {
+    constructor(type, description, effect, levelBonus) {
         super(type, description);
-        this.curseID = addCurseID();
         this.effect = effect;
-        this.playerID = playerID;
         this.levelBonus = levelBonus;
     }
 
 
-    addEffect(PlayerID, effect){
-        //check for PlayerID before effect is added
+    addEffect(effect){
         //add effect
         return effect;
     }
@@ -190,7 +159,7 @@ console.log("Characters are: ID =",test.name," and description = ",test2.name);
 //Monster tests
 var test3 = new Monster("type angry", "will try to kill you", 14, 3);
 
-console.log("new monster added: ", test3.monsterID, "and", test3.description)
+console.log(test3.description)
 
 //Treasure tests
 var test4 = new Treasure(100, 1, "will up your lvl, because it just will")
@@ -199,6 +168,6 @@ console.log("This is a treasure card: worth ", test4.value, " gold and levelBonu
 
 
 //Curse test
-var test6 = new Curse("whatever", "will debuff you", -2, null, test5.playerID)
-console.log("New curse: belongs to playerID = ", test6.playerID, " and its effect are = ", test6.effect, "levels")
+var test6 = new Curse("whatever", "will debuff you", -2, null)
+console.log("its effect are = ", test6.effect, "levels")
 
