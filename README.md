@@ -1,7 +1,9 @@
 # DigitalMunch
 #Table of contents
 *[General info]
+
 *[Technologies used]
+
 *[Setup]
 
 #General info
@@ -11,12 +13,16 @@ The game will be written mostly in Javascript and be displayed in a 2D format.
 
 #Technologies
 Local host: MAMP PRO (for mac) and XAMMP (for windows)
+
 Phaser.io (phaser version 3.55.2)
+
 IntelliJ IDE
 
 #Features
 Treasure Cards
+
 Monster Cards
+
 Equipment
 
 #Screenshots
@@ -24,6 +30,7 @@ img.comingsoon_tm
 
 #Setup
 A server is provided by RUC
+
 ((requirement listet here or in a requirements.txt file))
 
 #Usage
@@ -36,6 +43,7 @@ in progress.. at a very early stage
 
 #Room for inprovement 
 Room for improvement: everywhere
+
 To do: the game
 
 #Acknowledgements
