@@ -47,7 +47,7 @@ Room for improvement: everywhere
 To do: the game
 
 #Acknowledgements
-*this project was inspired by...
+this project was inspired by...
 
 #Contact
 *This game was created by @AnniesAmare, @ButtItDoesRun, and @WeiselO - We can be reached at____
