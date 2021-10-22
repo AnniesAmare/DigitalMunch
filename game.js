@@ -75,7 +75,7 @@ class Door{
 
     use(){
         //initiates door-card
-        // In case of a monster card, this method should return a value that signifies that combat is entered
+        //Checks if card is a monster card, this method should return a value that signifies that combat is entered
     }
 
 
