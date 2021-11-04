@@ -10,16 +10,16 @@ Deleted Player class and Player tests
 
 Dungeon class renamed to Door class
 
-Door class reworked to reflect class diagrom from report_0.2
+Door class reworked to reflect class diagram from report_0.2
 
 Tests added for Item, Monster and Equipment classes
 
 IsCursed attribute added
 
-Fixed spelling mistaked inside code
+Fixed spelling mistakes inside code
 
 #October 10th 2021
-((All classes seperated into sperate files and change class names to easier reflect their purpose, and highten readablity))
+((All classes seperated into separate files and change class names to easier reflect their purpose, and highten readablity))
 
 Changed inside "((...))"" reverted due to program not running
 

@@ -1,6 +1,8 @@
+
 <?php
 $hello = "Hello dear world!... ALSO FARTS"
 ?>
+
 
 <!doctype html>
 <html>
@@ -12,3 +14,4 @@ $hello = "Hello dear world!... ALSO FARTS"
 <script src="game.js"></script>
 </body>
 </html>
+
