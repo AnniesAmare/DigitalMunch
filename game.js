@@ -33,6 +33,11 @@ gameScene1.create = function(){
     //--changing a sprite's position
     bg.setPosition(gameW/2, gameH/2);
 
+    //fit background to gameScene
+    bg.displayWidth = gameW;
+    bg.displayHeight = gameH;
+
+
 
 };
 
