@@ -37,6 +37,9 @@ gameScene1.create = function(){
     bg.displayWidth = gameW;
     bg.displayHeight = gameH;
 
+    //Class-objects tests
+    //var character1 = new Character({scene: this, name: "Ginny", gender: "female", race: "elf", level: null});
+
 
 
 };
@@ -66,7 +69,22 @@ const game = new Phaser.Game(config)
 
 //Classes------------------------------------------------------------------------------------------//
 
-class Character {
+class Character { //extends Phaser.GameObjects.Scene
+    /*
+    constructor(scene) {
+        super(scene, name, gender, race, characterClass, level);
+        this.scene = scene;
+        name = name;
+        this.gender = gender;
+        this.race = race;
+        this.characterClass = characterClass;
+        this.level = 0;
+        this.scene.add.existing(this);
+    }
+
+     */
+
+
     constructor(name, gender, race,characterClass) {
         this.name = name;
         this.gender = gender;
@@ -74,6 +92,8 @@ class Character {
         this.characterClass = characterClass;
         this.level = 0;
     }
+
+
 
     levelUp(){
         this.level+=1
