@@ -14,6 +14,7 @@ let gameScene1 = new Phaser.Scene('Game');
 gameScene1.preload = function(){
     //Example of loading images (like ex. a background):
     this.load.image('background', './assets/MunchkinGameboard.png'); //note: "this" refers to scene object
+    this.load.image('troll', "./assets/testTroll.png");
 
 };
 
