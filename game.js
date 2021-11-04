@@ -1,5 +1,54 @@
 console.log("Hello World, I am javascript");
 
+//import phaser library
+import Phaser from 'phaser'
+
+/*create a new scene
+(this is where everything in the game goes)
+-- one game can have many scenes like multiple levels, or multiple screens)
+-- scenes can be open at the same time */
+let gameScene1 = new Phaser.Scene('Game');
+
+/*Load assets
+- loads external files to memory before the game starts */
+gameScene1.preload = function(){
+    //Example of loading images (like ex. a background):
+    //this.load.image('background', 'munchBackground.png'); //note: "this" refers to scene object
+};
+
+//the game
+gameScene1.create = function(){
+    //Useful stuff:
+    //--Getting the width and height of the game from configurations, so it only changes one place
+    //let gameW = this.sys.game.config.width;
+    //let gameH = this.sys.game.config.height
+    /*("this" refers to the gameScene.
+    "sys" means that the commad we are after, is from system commands.
+    "game" means its a game object we want something from.
+    "config" is the game object we want something from.)
+    */
+
+    //-- Creating a "sprite" (which is game characters, and elements)
+    //let bg = this.add.sprite(0,0, 'background');
+    //--changing a sprite's position
+    //bg.setPosition(gameW, gameH);
+};
+
+
+//sets the configuration of the game
+const config = {
+    type: Phaser.AUTO, //Phaser will use WebGL if available
+    width: 800,
+    height: 600,
+    scene: {gameScene1}
+}
+
+//create a new game, and pass the configuration
+const game = new Phaser.Game(config)
+
+
+
+
 //Classes------------------------------------------------------------------------------------------//
 
 class Character {
