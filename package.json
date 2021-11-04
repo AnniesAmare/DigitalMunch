@@ -1,0 +1,23 @@
+{
+  "name": "digitalmunch01",
+  "version": "1.0.0",
+  "description": "*[General info]",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnniesAmare/DigitalMunch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnniesAmare/DigitalMunch/issues"
+  },
+  "homepage": "https://github.com/AnniesAmare/DigitalMunch#readme",
+  "dependencies": {
+    "phaser": "^3.55.2"
+  }
+}
