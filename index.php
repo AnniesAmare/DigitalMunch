@@ -1,6 +1,6 @@
 
 <?php
-$hello = "Hello dear world!... ALSO FARTS"
+$hello = "Hello dear world!... I work!"
 ?>
 
 

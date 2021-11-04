@@ -49,8 +49,12 @@ gameScene1.update = function(){
 //sets the configuration of the game
 const config = {
     type: Phaser.AUTO, //Phaser will use WebGL if available
-    width: 800,
-    height: 600,
+    scale:{
+        //centers the gameScene on your screen
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 1000,
+        height: 550,
+    },
     scene: gameScene1
 }
 
