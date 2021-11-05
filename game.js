@@ -40,6 +40,7 @@ gameScene1.create = function(){
 
     //Class-objects tests
     //var character1 = new Character({scene: this, name: "Ginny", gender: "female", race: "elf", level: null});
+    var character = new CharaterTestClass({scene: gameScene1, x: gameW/2, y: gameH/2, text: "troll"});
 
 
 
@@ -69,6 +70,15 @@ const game = new Phaser.Game(config)
 
 
 //Classes------------------------------------------------------------------------------------------//
+class CharaterTestClass extends Phaser.GameObjects.Sprite{
+    constructor(config){
+        super(config.scene, x, y, "troll");
+        this.x = x;
+        this.y = y;
+        config.scene.add.sprite(this);
+    }
+
+}
 
 class Character { //extends Phaser.GameObjects.Scene
     /*
