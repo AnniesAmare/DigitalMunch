@@ -38,9 +38,8 @@ gameScene1.create = function(){
     bg.displayWidth = gameW;
     bg.displayHeight = gameH;
 
-    //Class-objects tests
-    //var character1 = new Character({scene: this, name: "Ginny", gender: "female", race: "elf", level: null});
-    var character = new CharaterTestClass({scene: gameScene1, x: gameW/2, y: gameH/2, text: "troll"});
+    //Class-objects test
+    //var character = new CharaterTestClass({scene: gameScene1, x: gameW/2, y: gameH/2, text: "troll"});
 
 
 
@@ -70,6 +69,7 @@ const game = new Phaser.Game(config)
 
 
 //Classes------------------------------------------------------------------------------------------//
+/*
 class CharaterTestClass extends Phaser.GameObjects.Sprite{
     constructor(config){
         super(config.scene, x, y, "troll");
@@ -80,22 +80,9 @@ class CharaterTestClass extends Phaser.GameObjects.Sprite{
 
 }
 
-class Character { //extends Phaser.GameObjects.Scene
-    /*
-    constructor(scene) {
-        super(scene, name, gender, race, characterClass, level);
-        this.scene = scene;
-        name = name;
-        this.gender = gender;
-        this.race = race;
-        this.characterClass = characterClass;
-        this.level = 0;
-        this.scene.add.existing(this);
-    }
+ */
 
-     */
-
-
+class Character {
     constructor(name, gender, race,characterClass) {
         this.name = name;
         this.gender = gender;
